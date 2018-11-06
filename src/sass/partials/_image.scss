@@ -9,7 +9,29 @@
     width: auto;
     height: auto;
 
-    @media screen and (orientation: portrait) {
+    @media screen and (max-width: 420px) {
         max-height: 100%;
+    }
+}
+
+.poster {
+    position: fixed;
+    object-fit: contain;
+    top: 50%;
+    background-size: cover;
+    background-position: center center;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-image: url('https://media.guim.co.uk/aebdef7515a0e9492b3c73f16a4d1b80a8c78524/0_0_760_1280/297.jpg');
+}
+
+@media screen and (min-width: 620px) {
+    .poster {
+      background-image: url('https://media.guim.co.uk/3090bcc2cb27798c9c2abef224416edb1b663a74/0_0_1440_1080/1000.jpg');
     }
 }
